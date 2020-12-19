@@ -14,7 +14,7 @@
 		</form>
 	`;
 
-	class HelloWorldAps extends HTMLElement {
+	class WidgetStyling extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
@@ -42,5 +42,5 @@
 		}
 	}
 
-customElements.define("com-devtons-sac-rest1-aps", HelloWorldAps);
+customElements.define("com-devtons-sac-rest1-aps", WidgetStyling);
 })();
