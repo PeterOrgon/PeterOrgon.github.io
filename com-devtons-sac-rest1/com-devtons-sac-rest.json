@@ -1,6 +1,6 @@
 {
-	"name": "SAC Rest Test 2",
-	"description": "SAC Rest Test 2",
+	"name": "SAC Rest Test 3",
+	"description": "SAC Rest Test 3 example",
 	"eula": "",
 	"vendor": "Peter Orgon",
 	"license": "",
@@ -15,9 +15,21 @@
             "url": "https://peterorgon.github.io/com-devtons-sac-rest1/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
-        }		
+		},
+		{
+			"kind": "styling",
+			"tag": "com-devtons-sac-rest1-aps",
+            "url": "https://peterorgon.github.io/com-devtons-sac-rest1/aps_webcomponent.js",
+			"integrity": "",
+            "ignoreIntegrity" : true
+		}				
     ],
 	"properties": {
+		"widgetText": {
+			"type": "string",
+			"description": "The text to be displayed in the widget",
+			"default" : "SAC Rest Test 3rd"
+		}		
 	},
 	"methods": {
 	},
