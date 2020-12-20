@@ -66,8 +66,11 @@
 			],
 			"body": "this.widgetText = newTextValue;"
 		}		
-		
+
 	},
 	"events": {
+		"onClick": {
+			"description": "Called when the user clicks"
+		}		
 	}
 }

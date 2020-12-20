@@ -13,6 +13,12 @@
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "SAC REST Test 2nd";
+
+            //Adding event handler for click events
+			this.addEventListener("click", event => {
+				var event = new Event("onClick");
+				this.dispatchEvent(event);
+            });            
         }
 
 
