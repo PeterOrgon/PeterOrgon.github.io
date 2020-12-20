@@ -242,7 +242,7 @@
 
                         var partnernumber = oView.byId("input").getValue(); //"0004540866"
                         console.log(partnernumber);
-
+                        /*
                         $.ajax({
                             url: restAPIURL,
                             type: 'POST',
@@ -269,6 +269,31 @@
                                 console.log("error: " + e);
                             }
                         });
+                        */
+
+                       $.ajax({
+                        url: restAPIURL,
+                        type: 'GET',
+                        contentType: 'application/json',
+                        success: function(data) {
+                            console.log(data);
+                            _score = data;
+
+                            that._firePropertiesChanged();
+                            this.settings = {};
+                            this.settings.score = "";
+
+                            that.dispatchEvent(new CustomEvent("onStart", {
+                                detail: {
+                                    settings: this.settings
+                                }
+                            }));
+
+                        },
+                        error: function(e) {
+                            console.log("error: " + e);
+                        }
+                    });                        
                     }
                 });
             });
