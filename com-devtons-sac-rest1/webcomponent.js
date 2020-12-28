@@ -12,7 +12,7 @@
 
             this._tagContainer;
             this._tagType = "h1";
-            this._tagText = "SAC REST Test 2nd";
+            this._tagText = "RED SAC REST Test 2nd";
 
             //Adding event handler for click events
 			this.addEventListener("click", event => {
