@@ -64,7 +64,7 @@
         }
 
         set widgetText(value) {
-            this._tagText = value;
+            this._tagText = value + " ---- RB TEST" ;
         }
 
         get headingType() {
